@@ -2,5 +2,7 @@
   <Folder Name="/Api/">
     <Project Path="CustomerServiceCampaign.Api/CustomerServiceCampaign.Api.csproj" />
   </Folder>
-  <Folder Name="/Orchestration/" />
+  <Folder Name="/Orchestration/">
+    <Project Path="CustomerServiceCampaign.AppHost/CustomerServiceCampaign.AppHost.csproj" />
+  </Folder>
 </Solution>
