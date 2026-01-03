@@ -12,4 +12,8 @@
       <ProjectReference Include="..\CustomerServiceCampaign.Api\CustomerServiceCampaign.Api.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Scalar.AspNetCore" Version="2.11.10" />
+    </ItemGroup>
+
 </Project>
