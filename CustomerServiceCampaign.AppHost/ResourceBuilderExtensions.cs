@@ -42,4 +42,31 @@ internal static class ResourceBuilderExtensions
     {
         return resourceBuilder.WithOpenApiDocs(name: "scalar", displayName: "Scalar", openApiPath: "scalar/v1");
     }
+    
+    internal static IResourceBuilder<SqlServerDatabaseResource> CreateSqlServerDatabase(this IDistributedApplicationBuilder distributedApplicationBuilder)
+    {
+        var password = distributedApplicationBuilder.AddParameter("DatabasePassword", secret: true);
+
+        var sql = distributedApplicationBuilder.AddSqlServer("mssql", password)
+            .WithDataVolume()
+            .WithLifetime(ContainerLifetime.Persistent);
+
+        var resourceBuilder = sql.AddDatabase("customerservicecampaign-db");
+        return resourceBuilder;
+    }
+    
+    internal static IResourceBuilder<KeycloakResource> CreateKeycloakServer(this IDistributedApplicationBuilder distributedApplicationBuilder)
+    {
+        var password = distributedApplicationBuilder.AddParameter("KeycloakPassword", secret: true);
+        var username = distributedApplicationBuilder.AddParameter("KeycloakAdmin", secret: true);
+        
+        var resourceBuilder = distributedApplicationBuilder.AddKeycloak("identity", 8080 , username, password)
+            .WithDataVolume()
+            .WithContainerName("identity")
+            .WithLifetime(ContainerLifetime.Persistent)
+            .WithExternalHttpEndpoints()
+            .WithRealmImport("Resources/realm-export.json");
+
+        return resourceBuilder;
+    }
 }

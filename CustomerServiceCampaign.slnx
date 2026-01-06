@@ -2,6 +2,19 @@
   <Folder Name="/Api/">
     <Project Path="CustomerServiceCampaign.Api/CustomerServiceCampaign.Api.csproj" />
   </Folder>
+  <Folder Name="/Common/">
+    <Project Path="Common/CustomerServiceCampaign.Common.Application/CustomerServiceCampaign.Common.Application.csproj" />
+    <Project Path="Common/CustomerServiceCampaign.Common.Domain/CustomerServiceCampaign.Common.Domain.csproj" />
+    <Project Path="Common/CustomerServiceCampaign.Common.Infrastructure/CustomerServiceCampaign.Common.Infrastructure.csproj" />
+    <Project Path="Common/CustomerServiceCampaign.Common.Presentation/CustomerServiceCampaign.Common.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Users/">
+    <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Application/CustomerServiceCampaign.Modules.Users.Application.csproj" />
+    <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Domain/CustomerServiceCampaign.Modules.Users.Domain.csproj" />
+    <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Infrastructure/CustomerServiceCampaign.Modules.Users.Infrastructure.csproj" />
+    <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Presentation/CustomerServiceCampaign.Modules.Users.Presentation.csproj" />
+  </Folder>
   <Folder Name="/Orchestration/">
     <Project Path="CustomerServiceCampaign.AppHost/CustomerServiceCampaign.AppHost.csproj" />
   </Folder>

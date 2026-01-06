@@ -1,0 +1,8 @@
+POST http://localhost:8080/realms/CustomerServiceCampaign/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&
+client_id=csc-public-client&
+username=test@user.com&
+password=test123&
+scope=openid email
