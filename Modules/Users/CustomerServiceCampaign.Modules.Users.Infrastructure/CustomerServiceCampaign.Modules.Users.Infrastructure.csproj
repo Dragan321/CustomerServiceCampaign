@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CustomerServiceCampaign.Modules.Users.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\CustomerServiceCampaign.Common.Infrastructure\CustomerServiceCampaign.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\CustomerServiceCampaign.Modules.Users.Application\CustomerServiceCampaign.Modules.Users.Application.csproj" />
+    <ProjectReference Include="..\CustomerServiceCampaign.Modules.Users.Presentation\CustomerServiceCampaign.Modules.Users.Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\Migrations\" />
+  </ItemGroup>
+
+</Project>
