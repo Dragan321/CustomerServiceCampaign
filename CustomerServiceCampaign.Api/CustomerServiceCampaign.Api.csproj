@@ -10,16 +10,7 @@
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\Modules\Campaigns\CustomerServiceCampaign.Modules.Campaigns.Infrastructure\CustomerServiceCampaign.Modules.Campaigns.Infrastructure.csproj" />
       <ProjectReference Include="..\Modules\Users\CustomerServiceCampaign.Modules.Users.Infrastructure\CustomerServiceCampaign.Modules.Users.Infrastructure.csproj" />
-    </ItemGroup>
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="obj\CustomerServiceCampaign.Api.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="obj\Debug\net9.0\rjsmcshtml.dswa.cache.json" />
-      <_ContentIncludedByDefault Remove="obj\Debug\net9.0\rjsmrazor.dswa.cache.json" />
-      <_ContentIncludedByDefault Remove="obj\Debug\net9.0\rpswa.dswa.cache.json" />
-      <_ContentIncludedByDefault Remove="obj\Debug\net9.0\staticwebassets.build.endpoints.json" />
-      <_ContentIncludedByDefault Remove="obj\Debug\net9.0\staticwebassets.build.json" />
-      <_ContentIncludedByDefault Remove="obj\project.assets.json" />
-      <_ContentIncludedByDefault Remove="obj\project.packagespec.json" />
     </ItemGroup>
 </Project>

@@ -8,6 +8,10 @@ internal static class AuthorizationExtensions
 {
     internal static IServiceCollection AddAuthorizationInternal(this IServiceCollection services)
     {
+        services.AddAuthorization();
+
+        services.AddHttpContextAccessor();
+
         services.AddTransient<IClaimsTransformation, CustomClaimsTransformation>();
 
         services.AddTransient<IAuthorizationHandler, PermissionAuthorizationHandler>();

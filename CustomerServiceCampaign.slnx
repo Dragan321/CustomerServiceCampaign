@@ -9,6 +9,12 @@
     <Project Path="Common/CustomerServiceCampaign.Common.Presentation/CustomerServiceCampaign.Common.Presentation.csproj" />
   </Folder>
   <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Campaigns/">
+    <Project Path="Modules/Campaigns/CustomerServiceCampaign.Modules.Campaigns.Application/CustomerServiceCampaign.Modules.Campaigns.Application.csproj" />
+    <Project Path="Modules/Campaigns/CustomerServiceCampaign.Modules.Campaigns.Domain/CustomerServiceCampaign.Modules.Campaigns.Domain.csproj" />
+    <Project Path="Modules/Campaigns/CustomerServiceCampaign.Modules.Campaigns.Infrastructure/CustomerServiceCampaign.Modules.Campaigns.Infrastructure.csproj" />
+    <Project Path="Modules/Campaigns/CustomerServiceCampaign.Modules.Campaigns.Presentation/CustomerServiceCampaign.Modules.Campaigns.Presentation.csproj" />
+  </Folder>
   <Folder Name="/Modules/Users/">
     <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Application/CustomerServiceCampaign.Modules.Users.Application.csproj" />
     <Project Path="Modules/Users/CustomerServiceCampaign.Modules.Users.Domain/CustomerServiceCampaign.Modules.Users.Domain.csproj" />

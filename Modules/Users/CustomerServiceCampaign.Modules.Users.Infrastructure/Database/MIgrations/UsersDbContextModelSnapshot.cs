@@ -41,6 +41,30 @@ namespace CustomerServiceCampaign.Modules.Users.Infrastructure.Database.Migratio
                         new
                         {
                             Code = "users:update"
+                        },
+                        new
+                        {
+                            Code = "campaigns:read"
+                        },
+                        new
+                        {
+                            Code = "campaigns:create"
+                        },
+                        new
+                        {
+                            Code = "campaigns:update"
+                        },
+                        new
+                        {
+                            Code = "rewards:read"
+                        },
+                        new
+                        {
+                            Code = "rewards:create"
+                        },
+                        new
+                        {
+                            Code = "rewards:update"
                         });
                 });
 
@@ -128,12 +152,72 @@ namespace CustomerServiceCampaign.Modules.Users.Infrastructure.Database.Migratio
                         },
                         new
                         {
+                            PermissionCode = "campaigns:read",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
+                            PermissionCode = "campaigns:create",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
+                            PermissionCode = "campaigns:update",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:read",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:create",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:update",
+                            RoleName = "Operator"
+                        },
+                        new
+                        {
                             PermissionCode = "users:read",
                             RoleName = "Administrator"
                         },
                         new
                         {
                             PermissionCode = "users:update",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "campaigns:read",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "campaigns:create",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "campaigns:update",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:read",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:create",
+                            RoleName = "Administrator"
+                        },
+                        new
+                        {
+                            PermissionCode = "rewards:update",
                             RoleName = "Administrator"
                         });
                 });

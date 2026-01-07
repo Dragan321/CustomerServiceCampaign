@@ -16,8 +16,13 @@ internal sealed class PermissionConfiguration : IEntityTypeConfiguration<Permiss
 
         builder.HasData(
             Permission.GetUser,
-            Permission.ModifyUser
-            //TODO: fill out
+            Permission.ModifyUser,
+            Permission.GetCampaign,
+            Permission.CreateCampaign,
+            Permission.ModifyCampaign,
+            Permission.GetReward,
+            Permission.CreateReward,
+            Permission.ModifyReward
                 );
 
         builder
@@ -32,10 +37,22 @@ internal sealed class PermissionConfiguration : IEntityTypeConfiguration<Permiss
                     // Operator permissions
                     CreateRolePermission(Role.Operator, Permission.GetUser),
                     CreateRolePermission(Role.Operator, Permission.ModifyUser),
+                    CreateRolePermission(Role.Operator, Permission.GetCampaign),
+                    CreateRolePermission(Role.Operator, Permission.CreateCampaign),
+                    CreateRolePermission(Role.Operator, Permission.ModifyCampaign),
+                    CreateRolePermission(Role.Operator, Permission.GetReward),
+                    CreateRolePermission(Role.Operator, Permission.CreateReward),
+                    CreateRolePermission(Role.Operator, Permission.ModifyReward),
                     
                     // Admin permissions
                     CreateRolePermission(Role.Administrator, Permission.GetUser),
-                    CreateRolePermission(Role.Administrator, Permission.ModifyUser)
+                    CreateRolePermission(Role.Administrator, Permission.ModifyUser),
+                    CreateRolePermission(Role.Administrator, Permission.GetCampaign),
+                    CreateRolePermission(Role.Administrator, Permission.CreateCampaign),
+                    CreateRolePermission(Role.Administrator, Permission.ModifyCampaign),
+                    CreateRolePermission(Role.Administrator, Permission.GetReward),
+                    CreateRolePermission(Role.Administrator, Permission.CreateReward),
+                    CreateRolePermission(Role.Administrator, Permission.ModifyReward)
                     );
             });
     }

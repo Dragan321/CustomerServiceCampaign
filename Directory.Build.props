@@ -11,11 +11,4 @@
     <OutputPath>$(RootOutputPath)intermediate\bin\$(Platform)\$(MSBuildProjectName)\</OutputPath>
     <BaseIntermediateOutputPath>$(RootOutputPath)intermediate\obj\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="10.17.0.131074">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
 </Project>

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+      <ProjectReference Include="..\CustomerServiceCampaign.Modules.Campaigns.Application\CustomerServiceCampaign.Modules.Campaigns.Application.csproj" />
+      <ProjectReference Include="..\..\..\Common\CustomerServiceCampaign.Common.Infrastructure\CustomerServiceCampaign.Common.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\..\Common\CustomerServiceCampaign.Common.Presentation\CustomerServiceCampaign.Common.Presentation.csproj" />
+    </ItemGroup>
+</Project>

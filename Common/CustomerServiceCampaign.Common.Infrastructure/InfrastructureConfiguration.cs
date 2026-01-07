@@ -38,7 +38,7 @@ public static class InfrastructureConfiguration
         });
 
         services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
-        
+
         services
             .AddOpenTelemetry()
             .ConfigureResource(resource => resource.AddService(serviceName))
@@ -52,7 +52,6 @@ public static class InfrastructureConfiguration
 
                 tracing.AddOtlpExporter();
             });
-
         return services;
     }
 }
